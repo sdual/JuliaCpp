@@ -1,0 +1,4 @@
+name = "JuliaCpp"
+uuid = "517d5aed-73ac-4e21-90e8-d368f3958886"
+authors = ["sdual <shr.nrht.0623@gmail.com>"]
+version = "0.1.0"
