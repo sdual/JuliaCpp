@@ -1,5 +1,11 @@
-module JuliaCpp
+module CppHello
+  using CxxWrap
+  @wrapmodule(joinpath("/Users/sdual/git/julia/libcxxwrap-julia-install/lib", "libhello"))
 
-greet() = print("Hello World!")
+  function __init__()
+    @initcxx
+  end
+end
 
-end # module
+# Call greet and show the result
+@show CppHello.greet()
