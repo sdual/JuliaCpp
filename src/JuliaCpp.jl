@@ -1,6 +1,6 @@
 module CppHello
 using CxxWrap
-  @wrapmodule(joinpath("/Users/sdual/git/julia/libcxxwrap-julia-build/lib", "libhello"))
+  @wrapmodule(joinpath("/Users/sdual/git/quantum/qulacs/bin", "libcppsimjl"))
 
   function __init__()
     @initcxx
